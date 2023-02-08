@@ -32,6 +32,6 @@ function arquivar() {
       aba3.getRange(arqLf,6).setFormula('=WEEKNUM(R[0]C[-2])');
       aba3.getRange(arqLf,7).setValue(dt1);
       aba3.getRange(arqLf,8).setValue(dt2);
-      arqLf = aba3.getLastRow()+1
+      arqLf = aba3.getLastRow()+1;
     }
-  }
+}
