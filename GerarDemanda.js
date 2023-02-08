@@ -1,4 +1,4 @@
-function gerarDemanda(){
+function gerarDemanda() {
   let planilha = SpreadsheetApp.getActive();
   let aba1 = planilha.getSheetByName("LISTA DE TAREFAS");
   let aba2= planilha.getSheetByName("01");
@@ -107,15 +107,16 @@ function gerarDemanda(){
   }
   
     // Obter as Tarefas do dia do Segundo Profissional
-  for (var a=0; a < lbd; a ++){
-    if (rng1[a][2]==resp2){
-        if (rng1[a][5]=="Mês"){
-          if (rng1[a][4]==dtnome){
-          aba3.getRange(laba3,2).setValue(rng1[a][0]);
-          aba3.getRange(laba3,7).setValue(rng1[a][3]);
-          aba3.getRange(laba3,8).setValue(dt);
-          laba3=laba3+1;
+    for (var a=0; a < lbd; a ++) {
+        if (rng1[a][2]==resp2) {
+            if (rng1[a][5]=="Mês") {
+            if (rng1[a][4]==dtnome) {
+                aba3.getRange(laba3,2).setValue(rng1[a][0]);
+                aba3.getRange(laba3,7).setValue(rng1[a][3]);
+                aba3.getRange(laba3,8).setValue(dt);
+                laba3=laba3+1;
+                }
+            } 
         }
-      }
     }
 }
